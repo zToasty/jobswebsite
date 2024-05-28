@@ -42,7 +42,7 @@ document.getElementById('view-vacancies-btn').addEventListener('click', function
     window.location = 'cards-employers.html';
 });
 
-document.getElementById('view-vacancies-btn').addEventListener('click', function() {
+document.getElementById('view-applicants-btn').addEventListener('click', function() {
     window.location = 'cards-applicants.html';
 });
 
