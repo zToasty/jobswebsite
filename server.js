@@ -6,7 +6,6 @@ const bcrypt = require('bcrypt');
 const session = require('express-session');
 
 const app = express();
-const hostname = '0.0.0.0'; // Позволяет принимать запросы с любого IP-адреса
 const  post = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -157,7 +156,7 @@ app.post('/user/like', (req, res) => {
         res.status(401).send('Not authenticated');
     }
 });
-// Сервер начинает прослушивание порта
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
+
