@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #182334;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16pt;
+}
+
+.primary-text {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+.secondary-text {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F455C;
+    padding: 7.5vh 5vw;
+    border-radius: 48px;
+    box-shadow: -8px -8px #141222;
+    color: #B4FFFF;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25vh;
+}
+
+.wrapper {
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #182334;
+    padding: 32px;
+    gap: 12px;
+    width: 100%;
+    box-shadow: inset -8px -8px #141222;
+}
+
+.input {
+    background-color: #2F455C;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    color: #B4FFFF;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14pt;
+    box-shadow: -8px -8px #141222;
+    transition: 0.3s;
+}
+
+.input:focus {
+    background-color: #5A8AB4;
+    box-shadow: -16px -16px #141222;
+    color: #141222;
+    transition: 0.3s;
+}
+
+.input::placeholder {
+    color: #5A8AB4;
+}
+
+.input:focus::placeholder {
+    color: #141222;
+    transition: 0.3s;
+}
+
+button {
+    width: 100%;
+    display: flex;
+    margin: 12px;
+    padding: 24px;
+    background-color: #2F455C;
+    color: #B4FFFF;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: -8px -8px #141222;
+    border-radius: 24px;
+    border: none;
+    justify-content: center;
+}
+
+button:hover {
+    transition: 0.3s;
+    background-color: #5A8AB4;
+    color: #141222;
+    box-shadow: -16px -16px #141222;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs. Выбирай удобно</title>
+    <link rel="icon" href="res/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="main-container">
+    <header id="header">
+        <a href="#" class="text" id="header-link">
+            <div id="header-logo">
+                Jobs
+            </div>
+            <div id="header-logo-append">
+                Выбирай удобно
+            </div>
+        </a>
+        <div class="text" id="header-block">
+            <span class="uppercase-text">
+                Вас приветствует сервис Jobs!
+            </span>
+            <br>
+            <span class="primary-text">
+                Мы поможем вам в трудоустройстве и в найме сотрудников.
+            </span>
+        </div>
+        <!-- Блок для отображения информации о пользователе -->
+        <div id="user-info" class="hidden text">
+            <a href="userProfile.html">
+            <span id="user-name" class="primary-text"></span>
+            </a>
+            <!-- Кнопка выхода теперь скрыта по умолчанию -->
+            <button id="logout-btn" class="hidden" onclick="logout()">
+                <span class="uppercase-text">Выйти</span>
+            </button>
+        </div>
+        <!-- Кнопки Логин и Регистрация -->
+        <div id="auth-buttons" class="auth-buttons">
+            <button id="login-btn" class="view-btn" onclick="location.href='login.html'">
+                <span class="uppercase-text">Вход</span>
+            </button>
+            <button id="register-btn" class="view-btn" onclick="location.href='register.html'">
+                <span class="uppercase-text">Регистрация</span>
+            </button>
+        </div>
+    </header>
+    <div class="info-card" id="buttons-container">
+        <button id="view-vacancies-btn" class="view-btn">
+            <span class="uppercase-text">
+                Просмотр вакансий
+            </span>
+        </button>
+        <button id="view-applicants-btn" class="view-btn">
+            <span class="uppercase-text">
+                Просмотр соискателей
+            </span>
+        </button>
+    </div>
+    <div id="info">
+        <h2 id="info-header">
+            <span class="uppercase-text">Для кого?</span>
+        </h2>
+        <div id="info-cards">
+            <div class="info-card" id="info-card-1">
+                <h3 class="info-card-header">
+                    <span class="uppercase-text">
+                        Работодателям:
+                    </span>
+                </h3>
+                <ul class="info-card-list">
+                    <li><span class="primary-text">Поможем найти умных сотрудников;</span></li>
+                    <li><span class="primary-text">Сильных работников;</span></li>
+                    <li><span class="primary-text">Трудолюбивых сотрудников;</span></li>
+                    <li><span class="primary-text">Тех сотрудников, которые впишутся в Ваш коллектив.</span></li>
+                </ul>
+                <a href="employer.html" class="signup-btn" id="signup-btn-employer">
+                    <span class="uppercase-text">Создать анкету</span>
+                </a>
+            </div>
+            <div class="info-card" id="info-card-2">
+                <h3 class="info-card-header">
+                    <span class="uppercase-text">
+                        Соискателям:
+                    </span>
+                </h3>
+                <ul class="info-card-list">
+                    <li><span class="primary-text">Поможем найти достойную работу;</span></li>
+                    <li><span class="primary-text">С достойной зарплатой;</span></li>
+                    <li><span class="primary-text">С приемлемыми условиями труда;</span></li>
+                    <li><span class="primary-text">С благоприятным коллективом.</span></li>
+                </ul>
+                <a href="applicant.html" class="signup-btn" id="signup-btn-applicant">
+                    <span class="uppercase-text">Создать анкету</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="profiles-container" class="hidden"></div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

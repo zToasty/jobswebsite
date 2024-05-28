@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #182334;
+    padding: 5vh 5vw;
+    display: flex;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 7.5vh 5vw;
+    background-color: #2F455C;
+    color: #B4FFFF;
+    border-radius: 48px;
+    box-shadow: -8px -8px #141222;
+    margin: auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 7.5vh;
+    align-items: center;
+}
+
+#header-link, #header-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#header-link {
+    transition: 0.3s;
+    text-align: center;
+}
+
+.text {
+    padding: 32px;
+    border-radius: 48px;
+    background-color: #182334;
+    box-shadow: inset -8px -8px #141222;
+}
+
+#header-logo {
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 7.5vw;
+    font-weight: 900;
+    color: #2F455C;
+    text-shadow: -4px -4px #141222;
+    transition: 0.3s;
+}
+
+#header-logo-append {
+    text-decoration: none;
+    color: white;
+    font-size: 0;
+    font-family: "Comfortaa", sans-serif;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+#header-link:hover {
+    transition: 0.3s;
+    #header-logo {
+        color: #5A8AB4;
+        text-shadow: -8px -8px #141222;
+    }
+    #header-logo-append {
+        font-size: 1.25vw;
+        color: #B4FFFF;
+        text-shadow: -4px -4px #141222;
+    }
+}
+
+#header-block {
+    text-align: right;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16pt;
+}
+
+.primary-text {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+.secondary-text {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+#after-header-text {
+    margin: 0 auto 7.5vh;
+    width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25vh;
+    background-color: #182334;
+    padding: 24px;
+    border-radius: 48px;
+    box-shadow: inset -8px -8px #141222;
+}
+
+#login-btn {
+    border-radius: 24px 24px 0 0;
+}
+
+#register-btn {
+    border-radius: 0 0 24px 24px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#info-header {
+    display:flex;
+    justify-content: center;
+    background-color: #182334;
+    padding: 24px;
+    margin-bottom: 1.25vh;
+    border-radius: 48px 48px 0 0;
+    box-shadow: inset -8px -8px #141222;
+}
+
+#info-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25vw;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #182334;
+    padding: 24px;
+    width: 100%;
+    box-shadow: inset -8px -8px #141222;
+}
+
+#info-card-1 {
+    border-radius: 0 0 0 48px;
+}
+
+#info-card-2 {
+    border-radius: 0 0 48px 0;
+}
+
+.info-card-header {
+    margin: 12px;
+}
+
+.info-card-list {
+    margin: 12px;
+}
+
+#signup-btn-employer {
+    border-radius: 0 0 0 24px;
+}
+
+#signup-btn-applicant {
+    border-radius: 0 0 24px 0;
+}
+
+.signup-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+    padding: 24px;
+    background-color: #2F455C;
+    color: #B4FFFF;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: -8px -8px #141222;
+}
+
+.signup-btn:hover {
+    transition: 0.3s;
+    background-color: #5A8AB4;
+    color: #141222;
+    box-shadow: -16px -16px #141222;
+}
+
+#buttons-container {
+    margin-bottom: 7.5vh;
+    flex-direction: row;
+    border-radius: 48px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #B4FFFF;
+}
+
+.hidden {
+    display: none;
+}
+
+.view-btn {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 24px;
+    margin: 0 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2F455C;
+    border: none;
+    color: #B4FFFF;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: -8px -8px #141222;
+}
+
+.view-btn:hover {
+    transition: 0.3s;
+    background-color: #5A8AB4;
+    color: #141222;
+    box-shadow: -16px -16px #141222;
+}
+
+#view-vacancies-btn {
+    border-radius: 24px 0 0 24px;
+}
+
+#view-applicants-btn {
+    border-radius: 0 24px 24px 0;
+}
+
+#next-btn {
+    padding: 24px;
+    margin: 0 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2F455C;
+    border: none;
+    border-radius: 24px;
+    color: #B4FFFF;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: -8px -8px #141222;
+}
+
+#next-btn:hover {
+    transition: 0.3s;
+    background-color: #5A8AB4;
+    color: #141222;
+    box-shadow: -16px -16px #141222;
+}
+
+#profiles-container {
+    margin-bottom: 7.5vh;
+}
+
+.wrapper {
+    border-radius: 48px;
+    display: flex;
+    background-color: #182334;
+    padding: 24px;
+    width: 100%;
+    box-shadow: inset -8px -8px #141222;
+}
+
+.card-paragraph-main {
+    padding: 24px;
+    color: #B4FFFF;
+    border: 1px solid #5A8AB4;
+    background-color: #141222;
+    border-radius: 48px;
+}
+
+.card-paragraph-secondary {
+    padding: 24px;
+    color: #B4FFFF;
+    border: 1px solid #5A8AB4;
+    background-color: #141222;
+    border-radius: 48px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: #2F455C; /* Используем тот же цвет фона, что и в основном CSS */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    width: 300px;
+    color: #B4FFFF; /* Используем тот же цвет текста, что и в основном CSS */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 24px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2F455C;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5A8AB4;
+}
+
+#logout-btn {
+    padding: 24px;
+    border-radius: 24px;
+    border: none;
+    background-color: #2F455C;
+    color: #B4FFFF;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    box-shadow: -8px -8px #141222;
+    transition: 0.3s;
+}
+
+#logout-btn:hover {
+    background-color: #5A8AB4;
+    color: #141222;
+    cursor: pointer;
+    box-shadow: -16px -16px #141222;
+    transition: 0.3s;
+}
+
+/* Стили для ссылки на профиль */
+.profile-link {
+    color: #B4FFFF;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.profile-link:hover {
+    color: #5A8AB4;
+}
+
+#user-email {
+    margin-bottom: 25px;
+}
+
+.page-title {
+    color: #333; /* Замените на цвет заголовка */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*#user-info {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    gap: 12px;*/
+/*}*/
+
+#user-info a {
+    color: #B4FFFF; /* Цвет текста ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-family: Arial, sans-serif; /* Шрифт ссылки */
+    transition: 0.3s; /* Плавный переход при наведении */
+}
+
+#user-info a:hover {
+    color: #5A8AB4; /* Цвет текста ссылки при наведении */
+}
+
+.user-info {
+    background-color: #f5f5f5; /* Замените на цвет фона */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.user-name {
+    color: #666; /* Замените на цвет текста */
+    font-size: 20px;
+}
+
+.liked-items {
+    background-color: #f5f5f5; /* Замените на цвет фона */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.section-title {
+    color: #333; /* Замените на цвет заголовка */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#like-btn {
+    padding: 24px;
+    margin: 0 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2F455C;
+    border: none;
+    border-radius: 24px;
+    color: #B4FFFF;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: -8px -8px #141222;
+}
+
+#like-btn:hover {
+    transition: 0.3s;
+    background-color: #5A8AB4;
+    color: #141222;
+    box-shadow: -16px -16px #141222;
+}

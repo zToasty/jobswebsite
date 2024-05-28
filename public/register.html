@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="icon" href="res/favicon.ico">
+    <link rel="stylesheet" href="login-register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <section class="form-container">
+        <form action="/register" method="post">
+            <div class="wrapper">
+                <h2>
+                    <span class="uppercase-text">
+                        Регистрация
+                    </span>
+                </h2>
+                <p>
+                    <span class="primary-text">
+                        Зарегистрируйтесь на сервисе и начинайте искать!
+                    </span>
+                </p>
+            </div>
+            <div class="wrapper">
+                <label for="firstName">
+                    <span class="primary-text">
+                        Имя:
+                    </span>
+                </label>
+                <input type="text" class="input" id="firstName" name="firstName" required>
+                <label for="lastName">
+                    <span class="primary-text">
+                        Фамилия:
+                    </span>
+                </label>
+                <input type="text" class="input" id="lastName" name="lastName" required>
+                <label for="email">
+                    <span class="primary-text">
+                        Email:
+                    </span>
+                </label>
+                <input type="email" class="input" id="email" name="email" required>
+                <label for="password">
+                    <span class="primary-text">
+                        Пароль:
+                    </span>
+                </label>
+                <input type="password" class="input" id="password" name="password" required>
+                <label for="type">
+                    <span class="primary-text">
+                        Тип пользователя:
+                    </span>
+                </label>
+                <select class="input" id="type" name="type" required>
+                    <option value="employer">
+                        Работодатель
+                    </option>
+                    <option value="applicant">
+                        Соискатель
+                    </option>
+                </select>
+                <button type="submit">
+                    <span class="uppercase-text">
+                        Зарегистрироваться
+                    </span>
+                </button>
+            </div>
+        </form>
+    </section>
+</main>
+</body>
+</html>

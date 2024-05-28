@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs. Выбирай удобно</title>
+    <link rel="icon" href="res/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="main-container">
+    <header id="header">
+        <a href="index.html" class="text" id="header-link">
+            <div id="header-logo">
+                Jobs
+            </div>
+            <div id="header-logo-append">
+                Выбирай удобно
+            </div>
+        </a>
+    </header>
+    <div class="text" id="userinfo">
+        <span class="primary-text"><strong>Имя:</strong> <span id="user-first-name"></span></span>
+        <span class="primary-text"><strong>Фамилия:</strong> <span id="user-last-name"></span></span>
+        <span class="primary-text"><strong>Email:</strong> <span id="user-email"></span></span>
+        <span class="primary-text"><strong>Тип пользователя:</strong> <span id="user-type"></span></span>
+    </div>
+    <div id="profiles-container" class="text"></div>
+    <div class="wrapper">
+        <button id="next-btn">
+                <span class="uppercase-text">
+                    Следующая анкета >>
+                </span>
+        </button>
+    </div>
+</div>
+<script src="userProfile.js"></script>
+</body>
+</html>

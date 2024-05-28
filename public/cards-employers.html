@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск вакансий</title>
+    <link rel="icon" href="res/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container">
+        <header id="header">
+            <a href="index.html" class="text" id="header-link">
+                <div id="header-logo">
+                    Jobs
+                </div>
+                <div id="header-logo-append">
+                    Выбирай удобно
+                </div>
+            </a>
+            <div class="text" id="header-block">
+                <span class="uppercase-text">
+                    Карточки вакансий
+                </span>
+                <br>
+                <span class="primary-text">
+                    Спасибо, что выбрали нас!
+                </span>
+                <br>
+                <span class="secondary-text">
+                    Не забывайте записывать контакты понравившихся Вам вакансий!
+                </span>
+            </div>
+            <!-- Блок для отображения информации о пользователе -->
+            <div id="user-info" class="hidden text">
+                <a href="userProfile.html">
+                    <span id="user-name" class="primary-text"></span>
+                </a>
+                <!-- Кнопка выхода теперь скрыта по умолчанию -->
+                <button id="logout-btn" class="hidden" onclick="logout()">
+                    <span class="uppercase-text">Выйти</span>
+                </button>
+            </div>
+            <!-- Кнопки Логин и Регистрация -->
+            <div id="auth-buttons" class="auth-buttons">
+                <button id="login-btn" class="view-btn" onclick="location.href='login.html'">
+                    <span class="uppercase-text">Вход</span>
+                </button>
+                <button id="register-btn" class="view-btn" onclick="location.href='register.html'">
+                    <span class="uppercase-text">Регистрация</span>
+                </button>
+            </div>
+        </header>
+        <div id="profiles-container" class="text"></div>
+        <div class="wrapper">
+            <button id="next-btn">
+                <span class="uppercase-text">
+                    Следующая карточка >>
+                </span>
+            </button>
+            <button id="like-btn">
+                <span class="uppercase-text">
+                    Понравилось
+                </span>
+            </button>
+
+        </div>
+    </div>
+    <script src="cards-employers.js"></script>
+</body>
+</html>
