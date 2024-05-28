@@ -7,7 +7,7 @@ const session = require('express-session');
 
 const app = express();
 const hostname = '0.0.0.0'; // Позволяет принимать запросы с любого IP-адреса
-const PORT = 3000;
+const  post = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
