@@ -1,3 +1,5 @@
+let userData = {};
+
 // Функция для проверки авторизации пользователя
 function checkAuth() {
     fetch('/user')
@@ -9,6 +11,7 @@ function checkAuth() {
             throw new Error('Not authenticated');
         })
         .then(user => {
+            userData = user;
             document.getElementById('user-info').classList.remove('hidden');
             document.getElementById('user-name').textContent = `Вы вошли как: ${user.firstName} ${user.lastName}`;
             document.getElementById('auth-buttons').classList.add('hidden');
@@ -39,8 +42,24 @@ document.getElementById('view-vacancies-btn').addEventListener('click', function
     window.location = 'cards-employers.html';
 });
 
-document.getElementById('view-applicants-btn').addEventListener('click', function() {
+document.getElementById('view-vacancies-btn').addEventListener('click', function() {
     window.location = 'cards-applicants.html';
+});
+
+document.getElementById('signup-btn-employer').addEventListener('click', function() {
+    if (userData.type === 'employer')
+        window.location = 'cards-employers.html';
+    else {
+        alert("Вы не можете создать анкету Соискателя, авторизуйтесь в аккаунт Работадателя, чтобы продолжить.");
+    }
+});
+
+document.getElementById('signup-btn-applicant').addEventListener('click', function() {
+    if (userData.type === 'applicant')
+        window.location = 'cards-employers.html';
+    else {
+        alert("Вы не можете создать анкету Соискателя, авторизуйтесь в аккаунт Соискателя, чтобы продолжить.");
+    }
 });
 
 

@@ -4,6 +4,7 @@ let currentProfileIndex = 0;
 let profiles = [];
 
 window.onload = function() {
+    alert('Если у вас не отображаются анкеты, перезайдите в аккаунт.')
     updateUser();
     console.log(user);
 }
