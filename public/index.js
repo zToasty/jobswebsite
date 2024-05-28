@@ -50,7 +50,7 @@ document.getElementById('signup-btn-employer').addEventListener('click', functio
     if (userData.type === 'employer')
         window.location = 'cards-employers.html';
     else {
-        alert("Вы не можете создать анкету Соискателя, авторизуйтесь в аккаунт Работадателя, чтобы продолжить.");
+        alert("Вы не можете создать анкету работодателя, авторизуйтесь в аккаунт Работадателя, чтобы продолжить.");
     }
 });
 
@@ -58,7 +58,7 @@ document.getElementById('signup-btn-applicant').addEventListener('click', functi
     if (userData.type === 'applicant')
         window.location = 'cards-employers.html';
     else {
-        alert("Вы не можете создать анкету Соискателя, авторизуйтесь в аккаунт Соискателя, чтобы продолжить.");
+        alert("Вы не можете создать анкету соискателя, авторизуйтесь в аккаунт Соискателя, чтобы продолжить.");
     }
 });
 
