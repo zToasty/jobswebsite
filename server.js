@@ -64,7 +64,6 @@ app.post('/register', async (req, res) => {
     saveUserData(jsonFilePath, userData);
     res.redirect('/login.html');
 });
-
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
     const jsonFilePath = path.join(__dirname, 'public', 'usersData.json');
@@ -74,7 +73,7 @@ app.post('/login', async (req, res) => {
         req.session.user = user;
         res.redirect('/');
     } else {
-        res.status(401).send('Invalid credentials');
+        res.status(401).send("Вы ввели неверные данные, повторите попытку снова.");
     }
 });
 
